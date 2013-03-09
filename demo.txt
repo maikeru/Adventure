@@ -1,0 +1,63 @@
+Ps-MacBook-Pro:adventure Owner$ ./adventure.rb 
+Bedroom
+-------
+You are in your bedroom
+
+You can see the following items:
+  book
+
+There are the following exits :
+  north
+
+What would you like to do?
+> get book
+
+*****
+
+
+Bedroom
+-------
+You are in your bedroom
+
+You can see the following items:
+  nothing
+
+There are the following exits :
+  north
+
+What would you like to do?
+> n
+You go north. You are now in the Landing
+
+*****
+
+Landing
+-------
+You are on the landing, there is a bedroom to the south and stairs leading downwards.
+
+You can see the following items:
+  nothing
+
+There are the following exits :
+  south
+
+What would you like to do?
+> drop book
+
+*****
+
+Landing
+-------
+You are on the landing, there is a bedroom to the south and stairs leading downwards.
+
+You can see the following items:
+  book
+
+There are the following exits :
+  south
+
+What would you like to do?
+> s
+You go south. You are now in the Bedroom
+
+*****
