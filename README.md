@@ -1,12 +1,12 @@
 Adventure Game in Ruby
 ======================
+Started as an exercise for learning Ruby during the Nishiwaki.rb/Higashi-Nada.rb first meeting.
 
 To Do
 -----
-* Add movement between rooms
 * Load game data from a file
 * Save current game state to a file
-* Implement conditions
+* Implement custom actions
 
 
 Room
@@ -16,7 +16,7 @@ Description
 Exits (direction -> room Id)
 Items
 State
-Conditions
+Custom actions
 
 Item
 ----
@@ -26,7 +26,7 @@ Description
 Aliases
 Weight
 State
-Conditions
+Custom actions
 
 Inventory
 ---------
@@ -38,10 +38,10 @@ NPC
 Id
 Name
 Description
-Conditions
+Custom actions
 
 
-What kind of conditions could we have?
+What kind of custom actions could we have?
 1. Switch type - Open/close door etc. State needs to be remembered
 2. Movement - based on some condition (e.g. door is open) allow movement in a direction to specific room
 3. One off event - On a specific action, move an item, display a description etc
