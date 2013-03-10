@@ -9,39 +9,20 @@ To Do
 * Implement custom actions
 
 
-Room
------
-Id
-Description
-Exits (direction -> room Id)
-Items
-State
-Custom actions
+Custom Actions
+--------------
+Attach to specific commands. Could have a pre- and post- custom action to be called before or after the command is executed.
+Or could make custom actions a wrapper around a command which chooses when to call the main command (and therefore easily prevent a command from executing)
+Need to allow filtering so that the custom action is only applied for the correct location and command arguments. (e.g. a custom action for opening a door shouldn't affect openning a chest)
 
-Item
-----
-Id
-Name
-Description
-Aliases
-Weight
-State
-Custom actions
+Example use cases:
+Closed door to the north
+* Wrap around the north command
+* Check door state
+* If closed, print a message about the door being closed and finish
+* Else call the north command normally
 
-Inventory
----------
-Items
-Capacity
-
-NPC
----
-Id
-Name
-Description
-Custom actions
-
-
-What kind of custom actions could we have?
-1. Switch type - Open/close door etc. State needs to be remembered
-2. Movement - based on some condition (e.g. door is open) allow movement in a direction to specific room
-3. One off event - On a specific action, move an item, display a description etc
+Booby Trapped chest:
+* Wrap around open command
+* If chest closed and trap has not already been triggered
+* Display message about trap being triggered and decrease players health
