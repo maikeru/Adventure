@@ -14,8 +14,8 @@ door = Item.new("door", "the door is closed", false)
 #]
 start_room = Room.new("Bedroom", "You are in your bedroom", [], exits)
 landing.exits = { south: start_room }
-start_room.add_item(book)
-start_room.add_item(door)
+#start_room.add_item(book)
+#start_room.add_item(door)
 
 player.location = start_room
 

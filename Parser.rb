@@ -29,7 +29,7 @@ class Parser
     tokens = input.split
     command = tokens[0]
     argument = tokens[1]
-    command_string_to_symbol(command), argument
+    return command_string_to_symbol(command), argument
   end
 
 end
