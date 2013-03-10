@@ -7,7 +7,15 @@ To Do
 * Load game data from a file
 * Save current game state to a file
 * Implement custom actions
+* Japanese game data (and any modifications needed to make it run)
 
+Game Data Loading
+-----------------
+This is referring to loading the game itself into the engine rather than loading saved gaming sessions.
+Load Items, Rooms, Custom actions, Keywords into hashes or arrays
+Loop through items with starting locations set and associate them with those locations
+Loop through the rooms and ???
+Loop through custom actions and associate them with the relevant command objects (how to deal with custom action priority, i.e. which action to execute first?)
 
 Custom Actions
 --------------
