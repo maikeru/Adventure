@@ -1,9 +1,9 @@
 #!/usr/bin/env ruby
 
-require_relative 'Player'
-require_relative 'Room'
-require_relative 'Parser'
-require_relative 'Item'
+require_relative '../lib/Player'
+require_relative '../lib/Room'
+require_relative '../lib/Parser'
+require_relative '../lib/Item'
 
 player = Player.new()
 landing = Room.new("Landing", "You are on the landing, there is a bedroom to the south and stairs leading downwards.")
