@@ -2,6 +2,17 @@ Adventure Game in Ruby
 ======================
 Started as an exercise for learning Ruby during the Nishiwaki.rb/Higashi-Nada.rb first meeting.
 
+
+Features (For Cucumber)
+-----------------------
+* Player starts game
+* Player enters command
+* Player wins game
+* Player loses game
+* Player exits game
+* Player saves game
+
+
 To Do
 -----
 * Load game data from a file

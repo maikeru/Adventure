@@ -5,7 +5,7 @@ require_relative 'item'
 
 module Adventure
   class Game
-    def initialize
+    def initialize(output)
 
     end
 
