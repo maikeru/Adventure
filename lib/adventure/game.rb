@@ -6,11 +6,13 @@ require_relative 'item'
 module Adventure
   class Game
     def initialize(output)
-
+      @output = output
     end
 
     def start
-
+      @output.puts 'Welcome to Adventure!'
+      @output.puts 'You are in your bedroom. There is a door to the north'
+      @output.puts '> '
     end
   end
 
