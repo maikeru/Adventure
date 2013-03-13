@@ -5,6 +5,6 @@ Feature: Player enters command
 
 Scenario: enter look command
   Given the game has started
-  When I enter the "look" command
+  When I enter "look"
   Then I should see "You are in your bedroom. There is a door to the north"
   And I should see "> "
