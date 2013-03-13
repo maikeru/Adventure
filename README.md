@@ -6,7 +6,10 @@ Started as an exercise for learning Ruby during the Nishiwaki.rb/Higashi-Nada.rb
 Features (For Cucumber)
 -----------------------
 * Player starts game
-* Player enters command
+* Game loads game data(?)
+* Player enters movement command
+* Player enters get/drop command
+* Player enters custom command
 * Player wins game
 * Player loses game
 * Player exits game
