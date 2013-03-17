@@ -14,6 +14,9 @@ module Adventure
       @output.puts 'You are in your bedroom. There is a door to the north'
       @output.puts '> '
     end
+    
+    def process_input(input)
+    end
   end
 
 end
