@@ -11,7 +11,8 @@ module Adventure
 
     def start
       @output.puts 'Welcome to Adventure!'
-      @output.puts 'You are in your bedroom. There is a door to the north'
+      room = Room.new(:bedroom, 'You are in your bedroom. There is a door to the north')
+      @output.puts room.show
       @output.puts '> '
     end
     
