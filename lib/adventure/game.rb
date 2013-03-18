@@ -11,12 +11,20 @@ module Adventure
 
     def start
       @output.puts 'Welcome to Adventure!'
-      room = Room.new(:bedroom, 'You are in your bedroom. There is a door to the north')
-      @output.puts room.show
-      @output.puts '> '
+      @current_location = Room.new(:bedroom, 'You are in your bedroom. There is a door to the north')
+      @output.puts @current_location.show
+      prompt_user
     end
     
     def process_input(input)
+      if (input == "look")
+        @output.puts @current_location.show
+        prompt_user
+      end
+    end
+    
+    def prompt_user
+      @output.puts '> '
     end
   end
 
