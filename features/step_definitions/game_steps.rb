@@ -23,13 +23,23 @@ Given(/^there is a "(.*?)" in the room$/) do |arg1|
   @game.current_location.add_item(book)
 end
 
+When(/^I enter "(.*?)"$/) do |input|
+  @game.process_input(input)
+end
+
 Then(/^I should see "(.*?)"$/) do |message|
   output.messages.should include(message)
 end
 
-When(/^I enter "(.*?)"$/) do |input|
-  @game.process_input(input)
+Then(/^the "(.*?)" should be in my inventory$/) do |item|
+  @game.player_inventory.contains(item)
 end
+
+Then(/^the "(.*?)" should not be in the room$/) do |item|
+  !@game.current_location.contains(item)
+end
+
+
 
 class Output
   def messages

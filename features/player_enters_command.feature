@@ -19,7 +19,8 @@ Scenario: enter look command when there is an item in the room
   And I should see "> "
 
 Scenario: pick up an item
-  Given there is a "book" in the room
+  Given I am in the "bedroom"
+  And there is a "book" in the room
   When I enter "get book"
   Then I should see "You pick up the book"
   And the "book" should be in my inventory
