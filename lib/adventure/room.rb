@@ -10,14 +10,22 @@ class Room
   
   def show
     show_string = @description
-    if (@item)
+    if (@inventory)
       show_string += "\nYou can see:\n"
-      show_string += "  #{@item.show}\n"
+      @inventory.each { |item| show_string += "  #{item.show}\n" }
     end
     show_string
   end
   
+  def inventory
+    @inventory ||= []
+  end
+  
   def add_item(item)
-    @item = item
+    self.inventory.push item
+  end
+  
+  def remove_item(item)
+    self.inventory.delete item
   end
 end
