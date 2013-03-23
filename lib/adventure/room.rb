@@ -22,7 +22,7 @@ class Room
   end
   
   def add_item(item)
-    self.inventory.push item
+    self.inventory << item
   end
   
   def remove_item(item)
