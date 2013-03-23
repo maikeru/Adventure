@@ -1,16 +1,14 @@
 class Item
-  attr_accessor :name, :description, :takeable, :state
+  attr_accessor :id, :name, :description
   
-  def initialize(name, description, takeable, state=nil)
-    @name=name
-    @description=description
-    @takeable=takeable
-    @state=state
+  def initialize(id, args = {})
+    @id=id
+    @name=args[:name]
+    @description=args[:description]
   end
   
-  def to_s
-    name
+  def show
+    @name
   end
-  
   
 end
